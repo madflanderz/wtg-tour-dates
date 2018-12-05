@@ -35,7 +35,7 @@ const Concerts = () => {
     <section>
       <h1>Tour Dates</h1>
       {concerts.map(concert => (
-        <Concert {...concert} />
+        <Concert key={concert.date} {...concert} />
       ))}
     </section>
   )

@@ -6,24 +6,29 @@ const SConcert = styled.div`
   position: relative;
   max-width: 600px;
   margin: auto;
-  grid-template-columns: 100px 150px auto 70px 70px;
+  grid-template-columns: 100px 150px auto 70px;
   span {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: none;
   }
 `
 
 const SoldOut = styled.div`
-  width: 60px;
-  height: 60px;
+  // width: 60px;
+  // height: 60px;
   border-radius: 30px;
   text-shadow: 2px 2px 2px #a40a05;
   position: absolute;
-  top: -13px;
+  top: -0px;
   right: 0;
   // background-color: red;
   // border: 1px solid white;
-  transform: rotate(20deg);
+  transform: rotate(10deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,13 +40,13 @@ const Concert = ({ date, city, location, ticketLink, soldOut }) => (
     <span>{city}</span>
     <span>{location}</span>
     <span>
-      {ticketLink && (
+      {ticketLink && !soldOut && (
         <a href={ticketLink} target="_blank">
           Tickets
         </a>
       )}
+      {soldOut && <SoldOut>SOLD OUT</SoldOut>}
     </span>
-    {soldOut && <SoldOut>SOLD OUT</SoldOut>}
   </SConcert>
 )
 
