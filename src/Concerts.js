@@ -33,7 +33,7 @@ const Concerts = () => {
 
   return (
     <section>
-      <h1>Tour Dates</h1>
+      <h1 className="headline">Tour Dates</h1>
       {concerts.map(concert => (
         <Concert key={concert.date} {...concert} />
       ))}

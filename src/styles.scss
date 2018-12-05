@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker|Titan+One|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto");
 
 html,
 body {
@@ -7,22 +7,31 @@ body {
 }
 
 body {
-  background-color: #3f3437;
+  //background-color: #3f3437;
+  background-color: #111;
   color: #f8f9f9;
   // font-family: "Permanent Marker", cursive;
 }
 
 .App {
   text-align: center;
-  background-color: #3f3437;
+  // background-color: #3f3437;
   color: #f8f9f9;
   // font-family: "Permanent Marker", cursive;
   font-family: "Roboto";
 }
 
-.bigHeadline {
+.headline {
   font-family: "Kaushan Script", cursive;
+  margin-bottom: 2rem;
+}
+
+.big {
   font-size: 5rem;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 .box {

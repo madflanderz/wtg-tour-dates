@@ -7,6 +7,9 @@ const SConcert = styled.div`
   max-width: 600px;
   margin: auto;
   grid-template-columns: 100px 150px auto 70px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
   span {
     text-align: left;
     margin-bottom: 30px;
@@ -41,7 +44,7 @@ const Concert = ({ date, city, location, ticketLink, soldOut }) => (
     <span>{location}</span>
     <span>
       {ticketLink && !soldOut && (
-        <a href={ticketLink} target="_blank">
+        <a href={ticketLink} target="_blank" rel="noopener">
           Tickets
         </a>
       )}

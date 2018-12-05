@@ -6,7 +6,7 @@ import "./styles.scss"
 function App() {
   return (
     <div className="App">
-      <h1 className="bigHeadline">Waving The Guns</h1>
+      <h1 className="headline big">Waving The Guns</h1>
       <Concerts />
     </div>
   )
